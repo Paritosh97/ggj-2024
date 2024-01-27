@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dfff61u5n4i1k" path="res://assets/player/horse.png" id="2_yde6e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykado"]
-size = Vector2(50, 50)
+size = Vector2(15.0001, 37.5002)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cd8pb"]
 atlas = ExtResource("2_yde6e")
@@ -114,10 +114,13 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
+scale = Vector2(0.399998, 0.399998)
 script = ExtResource("1_6c1hq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.49012e-07, 3.75002)
 shape = SubResource("RectangleShape2D_ykado")
+one_way_collision = true
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

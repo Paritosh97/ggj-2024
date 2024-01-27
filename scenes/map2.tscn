@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://duar26opwronb"]
 
-[ext_resource type="Texture2D" uid="uid://10tkqjvrei20" path="res://assets/tiles/Solaria Demo Update 01.png" id="1_fwdg2"]
+[ext_resource type="Texture2D" uid="uid://fnum0hxjoq6p" path="res://assets/tiles/Solaria Demo Update 01.png" id="1_fwdg2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ebp1a"]
 texture = ExtResource("1_fwdg2")

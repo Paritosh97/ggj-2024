@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+@export var SPEED = 50.0
+@export var PUSH_INERTIA = 100.0
 var current_direction = 0
 
 func _physics_process(delta):
@@ -27,6 +28,12 @@ func _physics_process(delta):
 	else:
 		velocity.x = 0
 		velocity.y = 0
+		
+	for index in get_slide_collision_count():
+		var collision = get_slide_collision(index)
+		var collider = collision.get_collider()
+		if collider is RigidBody2D:
+			collider.apply_central_force(-collision.get_normal() * PUSH_INERTIA)
 		
 	move_and_slide()
 	play_anim()
