@@ -210,3 +210,6 @@ position = Vector2(503, 1241)
 
 [node name="y_end" type="Node2D" parent="."]
 position = Vector2(15, -3872)
+
+[node name="finish" type="Node2D" parent="."]
+position = Vector2(-29, -2952)

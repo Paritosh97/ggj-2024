@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://cuwxngqqdj0et"]
+[gd_scene load_steps=27 format=3 uid="uid://cuwxngqqdj0et"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_6c1hq"]
 [ext_resource type="Texture2D" uid="uid://dcgcptpllqemb" path="res://assets/player/6.png" id="2_sp6go"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://b2uwio3jaem75" path="res://assets/player/20.png" id="16_kygo8"]
 [ext_resource type="AudioStream" uid="uid://cvkdxbj18l2p4" path="res://assets/audio/trot.wav" id="22_6ivjf"]
 [ext_resource type="AudioStream" uid="uid://bbtajq8i7i3lp" path="res://assets/audio/horse-neigh.wav" id="23_huopt"]
+[ext_resource type="AudioStream" uid="uid://chvjjiql21c8l" path="res://assets/audio/boulder_sound.mp3" id="24_tyms6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykado"]
 size = Vector2(105.001, 142.501)
@@ -155,3 +156,6 @@ stream = ExtResource("23_huopt")
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
 wait_time = 7.0
+
+[node name="push_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("24_tyms6")

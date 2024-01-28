@@ -28,3 +28,10 @@ func _ready():
 		add_child(item2)
 	
 	# TODO music for winning
+	
+func _process(delta):
+	
+	if $player.position.y <= $finish.position.y:
+		get_tree().change_scene_to_file("res://scenes/winning_boulder.tscn")
+		 
+		

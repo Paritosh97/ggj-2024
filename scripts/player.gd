@@ -36,7 +36,7 @@ func _physics_process(delta):
 		var collision = get_slide_collision(index)
 		var collider = collision.get_collider()
 		if collider is RigidBody2D:
-			
+			$push_sound.play()
 			collider.apply_central_force(-collision.get_normal() * PUSH_INERTIA)
 		
 	move_and_slide()
