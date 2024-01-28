@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://c07seic77hp76"]
 
-[ext_resource type="FontFile" uid="uid://bxhaspj1ualor" path="res://assets/fonts/PetitLatin.ttf" id="1_3q3uj"]
+[ext_resource type="FontFile" uid="uid://l6bh4eujgc6k" path="res://assets/fonts/PetitLatin.ttf" id="1_3q3uj"]
 [ext_resource type="Script" path="res://scenes/strongman scene/HUD.gd" id="1_25bs6"]
-[ext_resource type="Texture2D" uid="uid://b2wvire6xxsv" path="res://assets/Button.png" id="3_lsb3i"]
-[ext_resource type="FontFile" uid="uid://bjg42lkbdgdgc" path="res://assets/fonts/Circus.ttf" id="4_luwth"]
+[ext_resource type="Texture2D" uid="uid://byrggsnrkrgqn" path="res://assets/Button.png" id="3_lsb3i"]
+[ext_resource type="FontFile" uid="uid://b8pl56tg3tuv1" path="res://assets/fonts/Circus.ttf" id="4_luwth"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_25bs6")
@@ -49,10 +49,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -34.0
-offset_top = -60.0001
-offset_right = 707.0
-offset_bottom = 568.0
+offset_left = -11.0
+offset_top = -58.0
+offset_right = 730.0
+offset_bottom = 570.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.1, 0.1)
@@ -72,8 +72,38 @@ theme_override_fonts/font = ExtResource("4_luwth")
 theme_override_font_sizes/font_size = 170
 text = "Start"
 
+[node name="backbutton" type="TextureButton" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -93.0
+offset_top = -57.9999
+offset_right = 648.0
+offset_bottom = 570.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture_normal = ExtResource("3_lsb3i")
+
+[node name="Label" type="Label" parent="backbutton"]
+z_index = 1
+layout_mode = 0
+offset_left = 80.0003
+offset_top = 230.001
+offset_right = 690.0
+offset_bottom = 400.001
+theme_override_colors/font_color = Color(0.513726, 0.231373, 0, 1)
+theme_override_fonts/font = ExtResource("4_luwth")
+theme_override_font_sizes/font_size = 170
+text = "Back"
+
 [node name="MessageTimer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://bt6xw6bqwgbxt"]
 
 [ext_resource type="Script" path="res://scripts/how_to_play.gd" id="1_5rs6x"]
-[ext_resource type="Texture2D" uid="uid://qvh0gbplu5sb" path="res://assets/images/button.png" id="2_0eo3t"]
-[ext_resource type="Texture2D" uid="uid://b2wvire6xxsv" path="res://assets/Button.png" id="2_avr8j"]
-[ext_resource type="Texture2D" uid="uid://3mbgxtdia1oe" path="res://assets/images/how_to_play.jpg" id="2_d331d"]
+[ext_resource type="Texture2D" uid="uid://tto46we04hj" path="res://assets/images/button.png" id="2_0eo3t"]
+[ext_resource type="Texture2D" uid="uid://byrggsnrkrgqn" path="res://assets/Button.png" id="2_avr8j"]
+[ext_resource type="Texture2D" uid="uid://dymkrts3f6ew6" path="res://assets/images/how_to_play.jpg" id="2_d331d"]
 [ext_resource type="Script" path="res://scenes/BoulderBtn.gd" id="3_akr3f"]
-[ext_resource type="FontFile" uid="uid://bxhaspj1ualor" path="res://assets/fonts/PetitLatin.ttf" id="4_m1kc1"]
+[ext_resource type="FontFile" uid="uid://l6bh4eujgc6k" path="res://assets/fonts/PetitLatin.ttf" id="4_m1kc1"]
 
 [node name="Splash" type="Control"]
 layout_mode = 3
@@ -23,19 +23,22 @@ script = ExtResource("1_5rs6x")
 
 [node name="bg" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(594, 331)
+position = Vector2(1552, 896)
+scale = Vector2(3, 3)
 texture = ExtResource("2_d331d")
 
 [node name="container" type="Sprite2D" parent="."]
-position = Vector2(552, 319)
+position = Vector2(1370.25, 785)
+scale = Vector2(2.5, 2.5)
 texture = ExtResource("2_0eo3t")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
-offset_left = 364.0
-offset_top = 190.0
-offset_right = 764.0
-offset_bottom = 442.0
+offset_left = 986.25
+offset_top = 525.0
+offset_right = 1386.25
+offset_bottom = 777.0
+scale = Vector2(2, 2)
 theme_override_colors/default_color = Color(0.513726, 0.231373, 0, 1)
 theme_override_fonts/normal_font = ExtResource("4_m1kc1")
 theme_override_font_sizes/normal_font_size = 20
@@ -48,17 +51,19 @@ Follow Titidio in its quest to get back its animal friends, while trying to solv
 
 [node name="BackBtn" type="TextureButton" parent="."]
 z_index = 1
-offset_left = 460.0
-offset_top = 504.0
-offset_right = 1201.0
-offset_bottom = 1132.0
-scale = Vector2(0.25, 0.25)
+layout_mode = 0
+offset_left = 1214.25
+offset_top = 1213.0
+offset_right = 1955.25
+offset_bottom = 1841.0
+scale = Vector2(0.4, 0.4)
 texture_normal = ExtResource("2_avr8j")
 stretch_mode = 3
 script = ExtResource("3_akr3f")
 
 [node name="Label" type="Label" parent="BackBtn"]
 z_index = 1
+layout_mode = 0
 offset_left = 140.0
 offset_top = 260.0
 offset_right = 608.0

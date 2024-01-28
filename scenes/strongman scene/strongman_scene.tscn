@@ -2,26 +2,26 @@
 
 [ext_resource type="Script" path="res://scenes/strongman scene/strongman_scene.gd" id="1_4bsa5"]
 [ext_resource type="PackedScene" uid="uid://c07seic77hp76" path="res://scenes/strongman scene/HUD.tscn" id="2_0ry8g"]
-[ext_resource type="AudioStream" uid="uid://be8kkxnv7jvtm" path="res://scenes/strongman scene/Combat_Cirque.wav" id="3_xngly"]
-[ext_resource type="AudioStream" uid="uid://hxgvu8qrrivw" path="res://scenes/strongman scene/Combat_Cirque - rank 2.wav" id="4_eb7aj"]
-[ext_resource type="AudioStream" uid="uid://d38b20gbualyj" path="res://scenes/strongman scene/Combat_Cirque - rank 3.wav" id="5_vo4gu"]
-[ext_resource type="Texture2D" uid="uid://dktuggpg86quf" path="res://assets/player/1.png" id="6_clftb"]
-[ext_resource type="Texture2D" uid="uid://bsbwyj6h4imln" path="res://assets/player/2.png" id="7_u16l3"]
-[ext_resource type="Texture2D" uid="uid://cex6lylxqijdt" path="res://scenes/strongman scene/22_crop.png" id="8_87h5w"]
-[ext_resource type="Texture2D" uid="uid://b7yvs6y0fb5ii" path="res://scenes/strongman scene/23_crop.png" id="9_d0tpe"]
-[ext_resource type="Texture2D" uid="uid://dhr45m0jprhiq" path="res://assets/zebra/Big_Flex_zebra.png" id="9_ogpg1"]
-[ext_resource type="Texture2D" uid="uid://4syog13138mf" path="res://assets/zebra/heavily_cheering_zebra.png" id="10_d2wsg"]
-[ext_resource type="Texture2D" uid="uid://duaqpigmb6qww" path="res://scenes/strongman scene/halteres.png" id="10_hsig5"]
-[ext_resource type="Texture2D" uid="uid://b16p0alanw67r" path="res://assets/zebra/Bolt_zebra.png" id="11_2nccd"]
-[ext_resource type="Texture2D" uid="uid://dcjkmlgqiq13j" path="res://scenes/strongman scene/backgroundScene.png" id="12_tdkhe"]
-[ext_resource type="Texture2D" uid="uid://ces2hvwny7m3v" path="res://scenes/strongman scene/weight_down-1-min.png" id="15_gljwm"]
-[ext_resource type="Texture2D" uid="uid://bsnhtliv7y8ix" path="res://scenes/strongman scene/weight_down-2-min.png" id="16_p5ede"]
-[ext_resource type="Texture2D" uid="uid://bb5mkk66wmcfs" path="res://scenes/strongman scene/weight_middle-1-min.png" id="17_fxinq"]
-[ext_resource type="Texture2D" uid="uid://cas53qd57vt81" path="res://scenes/strongman scene/weight_middle-2-min.png" id="18_2m5vf"]
-[ext_resource type="Texture2D" uid="uid://b66sw1ef7om1d" path="res://scenes/strongman scene/weight_up-1-min.png" id="19_8am8d"]
-[ext_resource type="Texture2D" uid="uid://ec8dsi5ae7c" path="res://scenes/strongman scene/weight_up-2-min.png" id="20_52vj0"]
-[ext_resource type="Texture2D" uid="uid://8gk5kwcorkyn" path="res://scenes/strongman scene/weight_middle_up-1-min.png" id="21_snrwf"]
-[ext_resource type="Texture2D" uid="uid://bf1pulymbdc5a" path="res://scenes/strongman scene/weight_middle_up-2-min.png" id="22_lwtfj"]
+[ext_resource type="AudioStream" uid="uid://dux4sla6gkyys" path="res://scenes/strongman scene/Combat_Cirque.wav" id="3_xngly"]
+[ext_resource type="AudioStream" uid="uid://bksw1hhrxv882" path="res://scenes/strongman scene/Combat_Cirque - rank 2.wav" id="4_eb7aj"]
+[ext_resource type="AudioStream" uid="uid://c176rgycjrq8k" path="res://scenes/strongman scene/Combat_Cirque - rank 3.wav" id="5_vo4gu"]
+[ext_resource type="Texture2D" uid="uid://b0h0gwic7jpcb" path="res://assets/player/1.png" id="6_clftb"]
+[ext_resource type="Texture2D" uid="uid://didudt6pw02dp" path="res://assets/player/2.png" id="7_u16l3"]
+[ext_resource type="Texture2D" uid="uid://cdvioqigd6fue" path="res://scenes/strongman scene/22_crop.png" id="8_87h5w"]
+[ext_resource type="Texture2D" uid="uid://cv7td1cw53r0t" path="res://scenes/strongman scene/23_crop.png" id="9_d0tpe"]
+[ext_resource type="Texture2D" uid="uid://d145wh5out7dl" path="res://assets/zebra/Big_Flex_zebra.png" id="9_ogpg1"]
+[ext_resource type="Texture2D" uid="uid://qyc8wu2sn0mf" path="res://assets/zebra/heavily_cheering_zebra.png" id="10_d2wsg"]
+[ext_resource type="Texture2D" uid="uid://4b7e7coxv4ji" path="res://scenes/strongman scene/halteres.png" id="10_hsig5"]
+[ext_resource type="Texture2D" uid="uid://bxuhjh17dgyyf" path="res://assets/zebra/Bolt_zebra.png" id="11_2nccd"]
+[ext_resource type="Texture2D" uid="uid://dhkc5wyxa8hw0" path="res://scenes/strongman scene/backgroundScene.png" id="12_tdkhe"]
+[ext_resource type="Texture2D" uid="uid://8forjgw5ev84" path="res://scenes/strongman scene/weight_down-1-min.png" id="15_gljwm"]
+[ext_resource type="Texture2D" uid="uid://b55217arae2vh" path="res://scenes/strongman scene/weight_down-2-min.png" id="16_p5ede"]
+[ext_resource type="Texture2D" uid="uid://bbnd8unvwnpv0" path="res://scenes/strongman scene/weight_middle-1-min.png" id="17_fxinq"]
+[ext_resource type="Texture2D" uid="uid://d6iodm6k4l0j" path="res://scenes/strongman scene/weight_middle-2-min.png" id="18_2m5vf"]
+[ext_resource type="Texture2D" uid="uid://bc121qgtabise" path="res://scenes/strongman scene/weight_up-1-min.png" id="19_8am8d"]
+[ext_resource type="Texture2D" uid="uid://b2s27suxhwoo5" path="res://scenes/strongman scene/weight_up-2-min.png" id="20_52vj0"]
+[ext_resource type="Texture2D" uid="uid://bqolhlmbqkxg8" path="res://scenes/strongman scene/weight_middle_up-1-min.png" id="21_snrwf"]
+[ext_resource type="Texture2D" uid="uid://m7ff7ghfw2t4" path="res://scenes/strongman scene/weight_middle_up-2-min.png" id="22_lwtfj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gxnel"]
 animations = [{
@@ -4280,8 +4280,8 @@ stream = ExtResource("5_vo4gu")
 
 [node name="horse" type="AnimatedSprite2D" parent="."]
 z_index = 1
-position = Vector2(200, 75)
-scale = Vector2(0.33, 0.33)
+position = Vector2(460, 199)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_gxnel")
 animation = &"poseDown"
 
@@ -4293,48 +4293,48 @@ sprite_frames = SubResource("SpriteFrames_yhgno")
 
 [node name="Zebra1" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(10, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(44, 324.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 
 [node name="Zebra2" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(30, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(146, 322.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 
 [node name="Zebra3" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(50, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(236, 326.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 
 [node name="Zebra4" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(70, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(335, 326.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 
 [node name="Zebra5" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(90, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(425, 324.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 
 [node name="Zebra6" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(170, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(499, 318.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
@@ -4342,8 +4342,8 @@ flip_h = true
 
 [node name="Zebra7" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(190, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(598, 320.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
@@ -4351,8 +4351,8 @@ flip_h = true
 
 [node name="Zebra8" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(210, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(696, 322.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
@@ -4360,8 +4360,8 @@ flip_h = true
 
 [node name="Zebra9" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(230, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(799, 324.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
@@ -4369,40 +4369,40 @@ flip_h = true
 
 [node name="Zebra10" type="AnimatedSprite2D" parent="." groups=["Zebras"]]
 visibility_layer = 64
-position = Vector2(250, 170)
-scale = Vector2(0.1, 0.1)
+position = Vector2(892, 325.25)
+scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_gg1w3")
 animation = &"main"
 autoplay = "main"
 flip_h = true
 
 [node name="Zebra11" type="AnimatedSprite2D" parent="."]
-position = Vector2(15, 20)
-scale = Vector2(0.1, 0.1)
+position = Vector2(98, 98)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_nh8of")
 animation = &"main2"
 autoplay = "main2"
 flip_h = true
 
 [node name="Zebra12" type="AnimatedSprite2D" parent="."]
-position = Vector2(250, 20)
-scale = Vector2(0.1, 0.1)
+position = Vector2(579, 74)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_nh8of")
 animation = &"main2"
 autoplay = "main2"
 
 [node name="BackgroundScene" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(136.794, 96.155)
-scale = Vector2(0.0709386, 0.065007)
+position = Vector2(541.615, 361.5)
+scale = Vector2(0.282776, 0.250174)
 texture = ExtResource("12_tdkhe")
 
 [node name="WaitTimer" type="Timer" parent="."]
 wait_time = 5.0
 
 [node name="strongman" type="AnimatedSprite2D" parent="."]
-position = Vector2(88, 79)
-scale = Vector2(0.02, 0.02)
+position = Vector2(203, 200)
+scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_jwua7")
 animation = &"poseDown"
 
