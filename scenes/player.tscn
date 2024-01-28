@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://b2uwio3jaem75" path="res://assets/player/20.png" id="16_kygo8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykado"]
-size = Vector2(15.0001, 37.5002)
+size = Vector2(105.001, 142.501)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_30xpw"]
 animations = [{
@@ -133,11 +133,12 @@ scale = Vector2(0.399998, 0.399998)
 script = ExtResource("1_6c1hq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.49012e-07, 3.75002)
+position = Vector2(12.5001, 3.75002)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ykado")
 one_way_collision = true
 one_way_collision_margin = 0.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_30xpw")
-animation = &"left_walk"
+animation = &"left_idle"

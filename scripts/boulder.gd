@@ -8,4 +8,3 @@ func _ready():
 func _on_body_exited(body):
 	if body is CharacterBody2D:
 		linear_velocity = Vector2(0, 0)
-	print("Here")
