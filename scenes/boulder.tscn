@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjni7dx0umb4e"]
+[gd_scene load_steps=4 format=3 uid="uid://bjni7dx0umb4e"]
 
+[ext_resource type="Script" path="res://scripts/boulder.gd" id="1_5r5p3"]
 [ext_resource type="Texture2D" uid="uid://fnum0hxjoq6p" path="res://assets/tiles/Solaria Demo Update 01.png" id="1_eygj6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqq0p"]
@@ -8,6 +9,7 @@ size = Vector2(10, 11)
 [node name="RigidBody2D" type="RigidBody2D"]
 gravity_scale = 1.66533e-16
 linear_damp = 5.0
+script = ExtResource("1_5r5p3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_eygj6")
@@ -18,3 +20,6 @@ region_rect = Rect2(144, 112, 16, 16)
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_nqq0p")
 one_way_collision_margin = 0.0
+
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="body_shape_exited" from="." to="." method="_on_body_shape_exited"]
