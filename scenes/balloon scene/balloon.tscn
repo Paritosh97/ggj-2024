@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://btb1pdki5rft1"]
+
+[ext_resource type="Texture2D" uid="uid://dhtkniiicjhbf" path="res://scenes/balloon scene/balloon.png" id="1_t2lfh"]
+[ext_resource type="Script" path="res://scenes/balloon scene/balloon.gd" id="1_tr7tl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wngq2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t2lfh")
+}],
+"loop": true,
+"name": &"bloon1",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ilkou"]
+radius = 41.0
+height = 82.0
+
+[node name="Balloon" type="Node2D"]
+script = ExtResource("1_tr7tl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_wngq2")
+animation = &"bloon1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ilkou")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

@@ -1,16 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dweikadhwx8cm"]
+[gd_scene load_steps=7 format=3 uid="uid://bt6xw6bqwgbxt"]
 
 [ext_resource type="Script" path="res://scripts/how_to_play.gd" id="1_5rs6x"]
-[ext_resource type="Texture2D" uid="uid://tto46we04hj" path="res://assets/images/button.png" id="2_0eo3t"]
-[ext_resource type="Texture2D" uid="uid://dymkrts3f6ew6" path="res://assets/images/how_to_play.jpg" id="2_d331d"]
-
-[sub_resource type="FontFile" id="FontFile_y7e0d"]
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+[ext_resource type="Texture2D" uid="uid://qvh0gbplu5sb" path="res://assets/images/button.png" id="2_0eo3t"]
+[ext_resource type="Texture2D" uid="uid://b2wvire6xxsv" path="res://assets/Button.png" id="2_avr8j"]
+[ext_resource type="Texture2D" uid="uid://3mbgxtdia1oe" path="res://assets/images/how_to_play.jpg" id="2_d331d"]
+[ext_resource type="Script" path="res://scenes/BoulderBtn.gd" id="3_akr3f"]
+[ext_resource type="FontFile" uid="uid://bxhaspj1ualor" path="res://assets/fonts/PetitLatin.ttf" id="4_m1kc1"]
 
 [node name="Splash" type="Control"]
 layout_mode = 3
@@ -23,25 +18,55 @@ offset_right = 17.0
 offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.25, 0.25)
 script = ExtResource("1_5rs6x")
 
-[node name="HowToPlay" type="Sprite2D" parent="."]
+[node name="bg" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(594, 331)
 texture = ExtResource("2_d331d")
 
-[node name="Button" type="Sprite2D" parent="."]
+[node name="container" type="Sprite2D" parent="."]
 position = Vector2(552, 319)
 texture = ExtResource("2_0eo3t")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
 offset_left = 364.0
-offset_top = 192.0
+offset_top = 190.0
 offset_right = 764.0
 offset_bottom = 442.0
-theme_override_fonts/normal_font = SubResource("FontFile_y7e0d")
+theme_override_colors/default_color = Color(0.513726, 0.231373, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_m1kc1")
+theme_override_font_sizes/normal_font_size = 20
 text = "Horses are among the brightest animals in the world. Except Titidio. This horse has the annoying habit of reading the room incorrectly.  
+
 Sold to a circus from its younger age, it never realized that the circus worker treated the animals extremely poorly. 
 One day, Titidio woke up to a rabble of the other animals, trying to escape the circus. Not understanding its chance to escape, and rather believing that the other animals wanted to hug him, Titidio remained as the only animal in the circus, along with its cousins from the Grozidio family, the ever-cheering zebras.
 Follow Titidio in its quest to get back its animal friends, while trying to solve the traps and enigmas that the circus members set up.
 "
+
+[node name="BackBtn" type="TextureButton" parent="."]
+z_index = 1
+offset_left = 460.0
+offset_top = 504.0
+offset_right = 1201.0
+offset_bottom = 1132.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("2_avr8j")
+stretch_mode = 3
+script = ExtResource("3_akr3f")
+
+[node name="Label" type="Label" parent="BackBtn"]
+z_index = 1
+offset_left = 140.0
+offset_top = 260.0
+offset_right = 608.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.458751, 0.163309, 0, 1)
+theme_override_fonts/font = ExtResource("4_m1kc1")
+theme_override_font_sizes/font_size = 70
+text = "Back to menu"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="BackBtn" to="." method="_on_back_btn_pressed"]

@@ -1,0 +1,118 @@
+[gd_scene load_steps=11 format=3 uid="uid://dvd4r6wrw4or4"]
+
+[ext_resource type="Script" path="res://scenes/menu2.gd" id="1_wv45c"]
+[ext_resource type="FontFile" uid="uid://bjg42lkbdgdgc" path="res://assets/fonts/Circus.ttf" id="2_07d56"]
+[ext_resource type="Texture2D" uid="uid://xb5hopcndmd4" path="res://assets/Menu 3.jpg" id="2_w8qru"]
+[ext_resource type="Texture2D" uid="uid://b2wvire6xxsv" path="res://assets/Button.png" id="3_84l12"]
+[ext_resource type="FontFile" uid="uid://bxhaspj1ualor" path="res://assets/fonts/PetitLatin.ttf" id="4_yxsem"]
+[ext_resource type="Script" path="res://scenes/BoulderBtn.gd" id="5_ax2gu"]
+[ext_resource type="AudioStream" uid="uid://0sdvetx8kwxj" path="res://assets/music/Menu Theme GJ2024.wav" id="5_ipw4s"]
+[ext_resource type="Script" path="res://scenes/StrongManBtn.gd" id="7_e56dq"]
+[ext_resource type="Script" path="res://scenes/HelpBtn.gd" id="8_qptm4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2njlo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w8qru")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_wv45c")
+
+[node name="bg" type="AnimatedSprite2D" parent="."]
+position = Vector2(141, 81)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_2njlo")
+autoplay = "default"
+
+[node name="Title" type="Label" parent="."]
+offset_left = 9.0
+offset_top = 4.0
+offset_right = 276.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0.545098, 0.2, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_07d56")
+text = "Crazy Stupid Horse"
+horizontal_alignment = 1
+
+[node name="BoulderBtn" type="TextureButton" parent="."]
+offset_left = 46.0
+offset_top = 35.0
+offset_right = 787.0
+offset_bottom = 663.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("3_84l12")
+stretch_mode = 3
+script = ExtResource("5_ax2gu")
+
+[node name="Label" type="Label" parent="BoulderBtn"]
+z_index = 1
+offset_left = 140.0
+offset_top = 260.0
+offset_right = 608.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.458751, 0.163309, 0, 1)
+theme_override_fonts/font = ExtResource("4_yxsem")
+theme_override_font_sizes/font_size = 70
+text = "Boulder Game"
+horizontal_alignment = 1
+
+[node name="StrongManBtn" type="TextureButton" parent="."]
+offset_left = 165.0
+offset_top = 35.0
+offset_right = 906.0
+offset_bottom = 663.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("3_84l12")
+stretch_mode = 3
+script = ExtResource("7_e56dq")
+
+[node name="Label" type="Label" parent="StrongManBtn"]
+z_index = 1
+offset_left = 90.0002
+offset_top = 260.0
+offset_right = 665.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.458751, 0.163309, 0, 1)
+theme_override_fonts/font = ExtResource("4_yxsem")
+theme_override_font_sizes/font_size = 70
+text = "Strongman Game"
+horizontal_alignment = 1
+
+[node name="HelpBtn" type="TextureButton" parent="."]
+offset_left = 105.0
+offset_top = 88.0
+offset_right = 846.0
+offset_bottom = 716.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("3_84l12")
+stretch_mode = 3
+script = ExtResource("8_qptm4")
+
+[node name="Label" type="Label" parent="HelpBtn"]
+z_index = 1
+offset_left = 140.0
+offset_top = 260.0
+offset_right = 608.0
+offset_bottom = 343.0
+theme_override_colors/font_color = Color(0.458751, 0.163309, 0, 1)
+theme_override_fonts/font = ExtResource("4_yxsem")
+theme_override_font_sizes/font_size = 70
+text = "Help
+"
+horizontal_alignment = 1
+
+[node name="MenuTheme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ipw4s")
+
+[connection signal="pressed" from="BoulderBtn" to="BoulderBtn" method="_on_pressed"]
+[connection signal="pressed" from="StrongManBtn" to="BoulderBtn" method="_on_strong_man_btn_pressed"]
+[connection signal="pressed" from="StrongManBtn" to="StrongManBtn" method="_on_pressed"]
+[connection signal="pressed" from="HelpBtn" to="HelpBtn" method="_on_pressed"]

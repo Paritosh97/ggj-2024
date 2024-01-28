@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://8heqb3nm3gto"]
 
 [ext_resource type="Script" path="res://scripts/boulder-game.gd" id="1_h2ray"]
-[ext_resource type="AudioStream" uid="uid://bjg8hpk58183d" path="res://assets/music/boulder_scene.mp3" id="2_2aycw"]
+[ext_resource type="AudioStream" uid="uid://blwcabhyygwuy" path="res://assets/music/boulder_scene.mp3" id="2_2aycw"]
 [ext_resource type="PackedScene" uid="uid://b501oqw8kltva" path="res://scenes/map1.tscn" id="3_qiha6"]
-[ext_resource type="PackedScene" uid="uid://crvt138sijexf" path="res://scenes/map2.tscn" id="4_mudfu"]
-[ext_resource type="PackedScene" uid="uid://bb38uc8i60bas" path="res://scenes/map3.tscn" id="5_so5qd"]
-[ext_resource type="PackedScene" uid="uid://boo0fdtxfo6ua" path="res://scenes/map4.tscn" id="6_3yqga"]
-[ext_resource type="PackedScene" uid="uid://chy0l01t1ua4p" path="res://scenes/map5.tscn" id="7_87fds"]
+[ext_resource type="PackedScene" uid="uid://duar26opwronb" path="res://scenes/map2.tscn" id="4_mudfu"]
+[ext_resource type="PackedScene" uid="uid://dafjv2bnuvkay" path="res://scenes/map3.tscn" id="5_so5qd"]
+[ext_resource type="PackedScene" uid="uid://ba3ralgpksmhc" path="res://scenes/map4.tscn" id="6_3yqga"]
+[ext_resource type="PackedScene" uid="uid://cwx3l60ms7lmi" path="res://scenes/map5.tscn" id="7_87fds"]
 [ext_resource type="PackedScene" uid="uid://cuwxngqqdj0et" path="res://scenes/player.tscn" id="8_at7fx"]
-[ext_resource type="Texture2D" uid="uid://bvpbyqno585sf" path="res://assets/tiles/ground.png" id="9_aktls"]
+[ext_resource type="Texture2D" uid="uid://cadt3c8asadmr" path="res://assets/tiles/ground.png" id="9_aktls"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hurl6"]
 texture = ExtResource("9_aktls")

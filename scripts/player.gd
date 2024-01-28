@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@export var SPEED = 100.0
+@export var SPEED = 700.0
 @export var PUSH_INERTIA = 250.0
 var current_direction = 0
 var is_moving = false

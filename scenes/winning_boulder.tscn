@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://div66pe8yj4qh"]
+[gd_scene load_steps=4 format=3 uid="uid://ba0i43208f73f"]
 
-[ext_resource type="Texture2D" uid="uid://dymkrts3f6ew6" path="res://assets/images/how_to_play.jpg" id="1_b8kkk"]
-[ext_resource type="Texture2D" uid="uid://tto46we04hj" path="res://assets/images/button.png" id="2_k7gyv"]
-[ext_resource type="AudioStream" uid="uid://dmimpeti7lsyu" path="res://assets/audio/tadaa.mp3" id="3_jh6tg"]
+[ext_resource type="Texture2D" uid="uid://3mbgxtdia1oe" path="res://assets/images/how_to_play.jpg" id="1_b8kkk"]
+[ext_resource type="Texture2D" uid="uid://qvh0gbplu5sb" path="res://assets/images/button.png" id="2_k7gyv"]
+[ext_resource type="AudioStream" uid="uid://cmyrw3f8ax2qi" path="res://assets/audio/tadaa.mp3" id="3_jh6tg"]
 
 [node name="WinningBoulder" type="Node"]
 
