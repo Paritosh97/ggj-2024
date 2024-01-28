@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-@export var SPEED = 50.0
-@export var PUSH_INERTIA = 100.0
+@export var SPEED = 100.0
+@export var PUSH_INERTIA = 250.0
 var current_direction = 0
 var is_moving = false
 
@@ -36,6 +36,7 @@ func _physics_process(delta):
 		var collision = get_slide_collision(index)
 		var collider = collision.get_collider()
 		if collider is RigidBody2D:
+			
 			collider.apply_central_force(-collision.get_normal() * PUSH_INERTIA)
 		
 	move_and_slide()
@@ -43,6 +44,9 @@ func _physics_process(delta):
 	
 func play_anim():
 	var anim = $AnimatedSprite2D
+	
+	var walk_sound = $walk
+	var idle_sound = $idle
 	
 	if not is_moving:
 		if current_direction == 1:
@@ -53,6 +57,8 @@ func play_anim():
 			anim.play("back_idle")
 		elif current_direction == 4:
 			anim.play("face_idle")
+		if $Timer.time_left <= 0:
+			walk_sound.play()
 	else:
 		if current_direction == 1:
 			anim.play("left_walk")
@@ -62,3 +68,4 @@ func play_anim():
 			anim.play("back_walk")
 		elif current_direction == 4:
 			anim.play("face_walk")
+		idle_sound.play()

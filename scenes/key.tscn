@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bm35cevs6xyeg"]
+
+[ext_resource type="Texture2D" uid="uid://hduvucc64nuk" path="res://assets/tiles/key.png" id="1_nn2b4"]
+
+[node name="Key" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_nn2b4")

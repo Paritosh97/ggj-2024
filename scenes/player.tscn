@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cuwxngqqdj0et"]
+[gd_scene load_steps=26 format=3 uid="uid://cuwxngqqdj0et"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_6c1hq"]
 [ext_resource type="Texture2D" uid="uid://dcgcptpllqemb" path="res://assets/player/6.png" id="2_sp6go"]
@@ -21,6 +21,8 @@
 [ext_resource type="Texture2D" uid="uid://b608pwxea7gpf" path="res://assets/player/19.png" id="15_n7fgd"]
 [ext_resource type="Texture2D" uid="uid://c1oct3v7l0q8k" path="res://assets/player/15.png" id="16_8w5vy"]
 [ext_resource type="Texture2D" uid="uid://b2uwio3jaem75" path="res://assets/player/20.png" id="16_kygo8"]
+[ext_resource type="AudioStream" uid="uid://cvkdxbj18l2p4" path="res://assets/audio/trot.wav" id="22_6ivjf"]
+[ext_resource type="AudioStream" uid="uid://bbtajq8i7i3lp" path="res://assets/audio/horse-neigh.wav" id="23_huopt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykado"]
 size = Vector2(105.001, 142.501)
@@ -140,3 +142,16 @@ one_way_collision_margin = 0.0
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_30xpw")
 animation = &"left_idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)
+
+[node name="walk" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_6ivjf")
+
+[node name="idle" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_huopt")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 7.0

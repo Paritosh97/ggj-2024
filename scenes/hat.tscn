@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi2eqbowkj7a3"]
+
+[ext_resource type="Texture2D" uid="uid://581axnmo4pd" path="res://assets/tiles/hat.png" id="1_f47wf"]
+
+[node name="Hat" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_f47wf")
