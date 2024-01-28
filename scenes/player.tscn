@@ -129,12 +129,10 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
-scale = Vector2(0.399998, 0.399998)
 script = ExtResource("1_6c1hq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(12.5001, 3.75002)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ykado")
 one_way_collision = true
 one_way_collision_margin = 0.0

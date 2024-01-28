@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://scripts/boulder.gd" id="1_5r5p3"]
 [ext_resource type="Texture2D" uid="uid://134gh03318kg" path="res://assets/tiles/boulder.png" id="2_v0tsy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqq0p"]
-size = Vector2(14, 17)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yjrsw"]
+radius = 43.0
+height = 114.0
 
 [node name="RigidBody2D" type="RigidBody2D"]
 gravity_scale = 1.66533e-16
@@ -12,13 +13,13 @@ linear_damp = 5.0
 script = ExtResource("1_5r5p3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_v0tsy")
 region_rect = Rect2(144, 112, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
-shape = SubResource("RectangleShape2D_nqq0p")
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_yjrsw")
 one_way_collision_margin = 0.0
 
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
